@@ -1,0 +1,4 @@
+# pgutil extension
+comment = 'pgutil - set of useful function for PostgreSQL'
+default_version = '0.0.1'
+relocatable = true

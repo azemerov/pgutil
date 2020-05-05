@@ -1,0 +1,18 @@
+select isluhn('4000000000000002');
+ isluhn 
+--------
+      1
+(1 row)
+
+select isluhn('4000000000000010');
+ isluhn 
+--------
+      1
+(1 row)
+
+select isluhn('4000000000000011');
+ isluhn 
+--------
+      0
+(1 row)
+

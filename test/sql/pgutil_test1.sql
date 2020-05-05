@@ -1,0 +1,3 @@
+select isluhn('4000000000000002');
+select isluhn('4000000000000010');
+select isluhn('4000000000000011');
