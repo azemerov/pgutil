@@ -10,11 +10,30 @@ This extension is for that.
 ## Examples
 
 ```sql
-SELECT is luhn('4000000000000002');
+select is luhn('4000000000000002');
 ```
 ```
  isluhn
 --------
       1
+(1 row)
+```
+```sql
+select luhnval('400000000000000');
+```
+```
+ luhnval
+---------
+       2
+(1 row)
+```
+
+```sql
+select nvl(null,'x');
+```
+```
+ nvl
+-----
+ x
 (1 row)
 ```
