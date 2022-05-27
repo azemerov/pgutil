@@ -100,3 +100,13 @@ begin
   end if;
 end;
 $$;
+
+create function nvl2(val anyelement, not_null_val anyelement, null_val anyelement) returns anyelement language plpgsql immutable as $$
+begin
+  if val is null then
+    return null_val;
+  else
+    return not_null_val;
+  end if;
+end;
+$$;

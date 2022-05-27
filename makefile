@@ -6,7 +6,7 @@ REGRESS_OPTS  = --inputdir=test         \
                 --load-extension=pgutil \
                 --load-language=plpgsql
 REGRESS       = $(patsubst test/sql/%.sql,%,$(TESTS))
-MODULES = nvl decode luhn
+MODULES = luhn
 
 PG_CONFIG = pg_config
 PGXS := $(shell $(PG_CONFIG) --pgxs)

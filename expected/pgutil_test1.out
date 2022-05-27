@@ -10,9 +10,9 @@ select decode(''::text,'A','B','C','D'), decode(''::text,'A','B','V','D','?'), d
         | ?      | B      | D      | 
 (1 row)
 
-select nvl(null::text,'A'), nvl('a'::text,'A'), nvl(null::int,0), nvl(123::int,1);
- nvl | nvl | nvl | nvl 
------+-----+-----+-----
- A   | a   |   0 | 123
+select nvl(null::text,'A'), nvl('a'::text,'A'), nvl(null::int,0), nvl(123::int,1), nvl2(1::int,1,2), nvl2(null::int,1,2);
+ nvl | nvl | nvl | nvl | nvl2 | nvl2 
+-----+-----+-----+-----+------+------
+ A   | a   |   0 | 123 |    1 |    2
 (1 row)
 
